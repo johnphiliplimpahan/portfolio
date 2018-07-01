@@ -1,0 +1,67 @@
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+section.intro {
+  overflow-y:hidden;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  background-image: url("https://images.pexels.com/photos/702139/pexels-photo-702139.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  
+  .intro-wrapper {
+    background-color: rgba($color: #fafafa, $alpha: 0.8);
+    width: 50%;
+    margin: 0 auto;
+    font-family: $font-family-dosis;
+    position: relative;
+    top: 50%;
+    color: #333;
+  }
+}
+
+.navbar-laravel {
+  position: fixed;
+  top:0;
+  background-color: $navbar-bg;
+
+  a.brand {
+    color: $navbar-color;
+    font-family: $font-family-dosis;
+    font-size: 1.7rem;
+    font-weight: bold;
+
+    &:hover{
+      text-decoration: none;
+      color: $navbar-color;
+    }
+  }
+
+  .nav .nav-item {
+
+    .nav-link {
+      font-family: $font-family-dosis;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fafafa;
+      border: 2px solid transparent;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        background-color: $navbar-color;
+        color: #333;
+      }
+    }
+
+  }
+
+}
